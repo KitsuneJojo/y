@@ -1,13 +1,8 @@
 ---
-const message = "Hello World";
+import Welcome from '../components/Welcome.astro';
+layout: '../layouts/Layout.astro'
 ---
 
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Astro Hello World</title>
-  </head>
-  <body>
-    <h1>{message}</h1>
-  </body>
-</html>
+<Welcome />
+<div class="hello">Hello World</div>
+<img class="logo" src="/astro.svg" alt="Astro logo" />
